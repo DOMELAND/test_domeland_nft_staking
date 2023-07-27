@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Set core body defaults */
+body {
+    /* URL path is relative to the location of the CSS file     */
+    background-image: url('/static/images/bg.webp') !important;
+    background-position: center center;
+    background-attachment: scroll !important; 
+    background-size: cover;
+
+    /*---*/
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding-bottom: 250px;
+}
+
+/* ---- ----- */
+body::before {
+content: "";
+background-image: url('/static/images/moon.webp');
+background-repeat: no-repeat;
+background-size: cover; background-size: 50%; 
+background-position: bottom;
+opacity: 0.7; 
+top: 0;
+left: 0;
+bottom: 38%;
+right: 0;
+position: absolute;
+z-index: -1;  
+}
+
+
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --black: #1c1e21;
+  --white: #ffffff;
+  --tw-color1: #a855f7;
+  --tw-color1-hover: #9333ea;
+}
+
+body {
+  background: var(--black);
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  display: flex;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+/* button costum rules */
+
+.tw-web3button {
+  width: 75%;
+  height: 75%; 
+  max-width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.tw-web3button:hover {
+  width: 75%;
+  height: 75%; 
+  max-width: 180px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
