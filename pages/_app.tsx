@@ -49,14 +49,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         name: "DOMEStaker",
         description: "Domeland Staker",
         logoUrl: "https://twitter.com/0xOffchain",
-        url: "https://app.domeland.vip",
+        url: "https://test.domeland.vip",
         isDarkMode: true,
       }}
     storageInterface={storage}
     clientId="e7ec4f3dd55f91ca9a3f313df231ddb4"
     authConfig={{
       authUrl: "/",
-      domain: "https://app.domeland.vip",
+      domain: "https://test.domeland.vip",
     }}
     >
       <Component {...pageProps} />
